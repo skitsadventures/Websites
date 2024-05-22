@@ -1,0 +1,229 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: system-ui;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  background-color: #343434;
+  text-align: center;
+  height: 70px;
+  padding: 10px;
+}
+
+.footer a {
+  color: #000000;
+  margin-right: 20px;
+}
+
+/* /////////////////////////////////  HEADER INFO   ///////////////////////////////////////////////// */
+
+.toolbar {
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  background-color: #424242;
+  color: rgb(0, 0, 0);
+  font-weight: 600;
+}
+
+/* /////////////////////////////////  INPUT INFO   ///////////////////////////////////////////////// */
+
+// Glowing buttons
+
+a {
+  position: relative;
+  background: #fff;
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  letter-spacing: 0.1em;
+  font-weight: 400;
+  padding: 10px 30px;
+  transition: 0.5s;
+}
+
+a:hover {
+  background: var(--clr);
+  box-shadow: 0 0 35px var(--clr);
+  letter-spacing: 0.25em;   
+}
+
+/* /////////////////////////////////  HOME INFO   ///////////////////////////////////////////////// */
+
+.HomeBG {
+  background: linear-gradient(to right, #011816, #02a58d);
+  height: 200px;
+  flex: 0.5;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.HomeCleanBackground {
+  flex: 1;
+  background-color: #92def2;
+  padding: 20px;
+}
+
+.HomeImage {
+  margin: 6px;
+  border-radius: 10px;
+  height: 190px;
+}
+
+.HColumn {
+  text-align: left;
+  padding-right: 5%;
+}
+
+.ImageColumn {
+  padding-left: 20%;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .ImageColumn, .HColumn {
+      flex: 1 1 100%;
+  }
+}
+
+/* /////////////////////////////////   About INFO   ///////////////////////////////////////////////// */
+
+.AImageSections {
+  background: linear-gradient(to right, #011816, #02a59d);
+  display: flex;
+}
+
+.About {
+  background: linear-gradient(to right, #011816, #02a59d);
+}
+
+.AImageInfo {
+  margin-left: 6%;
+}
+
+.box img {
+  max-width: 100%;
+  max-height: 100%;
+  z-index: 1;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin-left: 6%;
+  margin-top: 8px;
+  position: relative;
+  width: 400px;
+  height: 340px;
+  background: repeating-conic-gradient(from var(--a), #92def2 0%, #92def2 5%, transparent 5%, transparent 20%, #92def2 50%);
+  animation: animate 4s linear infinite;
+}
+
+@property --a {
+  syntax: '<angle>';
+  inherits: false;
+  initial-value: 0deg;
+}
+
+@keyframes animate {
+  0% {
+      --a: 0deg;
+  }
+  100% {
+      --a: 360deg;
+  }
+}
+
+.box::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: repeating-conic-gradient(from var(--a), #92def2 0%, #92def2 5%, transparent 5%, transparent 20%, #92def2 50%);
+  animation: animate 4s linear infinite;
+  animation-delay: -1s;
+  z-index: 0;
+}
+
+/* /////////////////////////////////   Resume INFO   ///////////////////////////////////////////////// */
+
+.RBody {
+  margin-left: 10%;
+  margin-right: 10%;
+  display: flex;
+  background: linear-gradient(120deg, #abdeff, #c8c8c8);
+}
+
+.PLColumn {
+  margin: 6px;  
+  background-color: #cccccc;
+}
+
+.PLImage {
+  margin: 6px; 
+  height: 190px; 
+  border: dimgrey; 
+  border-radius: 10px;
+}
+
+.PContent {
+  text-align: left;
+  font-size: medium;
+  font-weight: normal;
+}
+
+.PInfo {
+  margin-left: 40px;
+  text-align: center;
+}
+
+.PGreyHeading {
+  font-weight: bold;
+  text-align: left;
+  margin: 10%;
+}
+
+.UL {
+  padding-left: 10%;
+}
+
+.PHeading {
+  font-weight: bold;
+  text-align: left;
+}
+
+.PInternship {
+  margin-left: 10%;
+  margin-right: 10%;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+.Test {
+  flex-direction: column;
+}
+
+/* /////////////////////////////////   FOOTER INFO   ///////////////////////////////////////////////// */
