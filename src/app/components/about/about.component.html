@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,107 +10,105 @@
   <style>
     /* This style is to let the footer links stay to the right */
     .spacer {
-    flex: 1;
-  }
+      flex: 1;
+    }
   </style>
 </head> 
 
-<!-- This is the body under the header parallax -->
-
 <body>
-  <div class="About">
-    <b style="font-size: 30px; color: #ffffff;">This is all my Blender artworks for now.</b>
-  </div>
-
-  <div class="parallax" style="min-height: 50px;"></div>
-
-  <!-- This is where the images with the borders are contained -->
-
-  <div class="AImageSections">
-    <div class="box">
-      <img src="favicon.ico" style="height: 95%; width: 95%;">
-    </div>
-    <div>
-      <h1 class="AImageInfo" style=" color: #ffffff;">Mushroom</h1>
-      <h2 style="padding-left: 20px; margin-top: 5px; margin-bottom: 5px; color: #ffffff;">This project was one of my favorites. I learnt the basics of emission, geometry nodes as well as touching up with particles and animation</h2>
-    </div>
-  </div>
-
-  <div class="AImageSections">
-    <div class="box">
-      <img src="../assets/images/water.jpeg" style="height: 95%; width: 95%;">
-    </div>
-    <div>
-      <h1 class="AImageInfo" style=" color: #ffffff;">Ocean</h1>
-      <h2 style="padding-left: 20px; margin-top: 5px; margin-bottom: 5px; color: #ffffff;">With this project I got a better understanding with how snapping works and how it can be applied to multiple options even during and animation.<br>
-      Other topics i leant was particle emmision, creating fog and the differences between many of blenders render options.</h2>
-    </div>
-  </div>
-
-  <div class="AImageSections">
-    <div class="box">
-      <img src="../assets/images/untitled.jpeg" style="height: 95%; width: 95%;">
-    </div>
-    <div>
-      <h1 class="AImageInfo" style=" color: #ffffff;">Building Complex</h1>
-      <h2 style="padding-left: 20px; margin-top: 5px; margin-bottom: 5px; color: #ffffff;">This is one of my first project besides the common blender guru doughnut. I learnt a valuable lesson about what happens if you have too many vertices. XD</h2>
-    </div>
-  </div>
-
-  <div class="AImageSections">
-    <div class="box">
-      <img src="../assets/images/sunset.jpeg" style="height: 95%; width: 95%;">
-    </div>
-    <div>
-      <h1 class="AImageInfo" style=" color: #ffffff;">Sunset</h1>
-      <h2 style="padding-left: 20px; margin-top: 5px; margin-bottom: 5px; color: #ffffff;">All this project is, is me attempting a low poly object. There was useful information however. I learnt more about noise textures and how to animate it's value. </h2>
-    </div>
-  </div>
-
-  <div class="AImageSections">
-    <div class="box">
-      <img src="../assets/images/portal.jpg" style="height: 95%; width: 95%;">
-    </div>
-    <div>
-      <h1 class="AImageInfo" style=" color: #ffffff;">Portal</h1>
-      <h2 style="padding-left: 20px; margin-top: 5px; margin-bottom: 5px; color: #ffffff;">This project is one of my favorites yet there wasnt much to learn from here.</h2>
-    </div>
-  </div>
-
-  <div class="AImageSections">
-    <div class="box">
-      <img src="../assets/images/oceanGif.gif" style="height: 95%; width: 95%;">
-    </div>
-    <div>
-      <h1 class="AImageInfo" style=" color: #ffffff;">Ocean</h1>
-      <h2 style="padding-left: 20px; margin-top: 5px; margin-bottom: 5px; color: #ffffff;">This is the same ocean project I was just seeing how gifs on the webpage works.</h2>
-    </div>
-  </div>
-
-
-  <!-- This is for the panal that shows the images -->
-
-  <marquee class="marq" bgcolor = "#ae02fe" direction = "right" loop="-1" white-space = "nowrap">
-    <div style="margin: center; width: 260px; height: 200px;">
-      <div style="margin: auto; width:fit-content; height: fit-content;background-color: beige;">
-        <span>
-          <img src="favicon.ico" style="margin: 6px; height: 190px;">
-          <img src="../assets/images/water.jpeg" style="margin: 6px; height: 190px;">
-          <img src="../assets/images/untitled.jpeg" style="margin: 6px; height: 190px;">
-          <img src="../assets/images/sunset.jpeg" style="margin: 6px; height: 190px;">
-          <img src="../assets/images/portal.jpg" style="margin: 6px; height: 190px;">  
-          <img src="../assets/images/oceanGif.gif" style="margin: 6px; height: 190px;"> 
-        </span>          
+  <div id="container">
+    <div class="content">
+      <div class="About">
+        <b style="font-size: 30px; color: #ffffff;">This is all my Blender artworks for now.</b>
       </div>
-    </div>
-  </marquee>
 
-  <div class="footer">
-    <div class="spacer"></div>
-      <a href="#" style="--clr:#fff; margin-right: 20px;"><i class="fa-brands fa-linkedin"></i></a>
-      <a href="https://github.com/skitsadventures" style="--clr:#000000; margin-right: 20px;"><i class="fa-brands fa-github"></i></a>
-      <a href="#" style="--clr:#fff; margin-right: 20px;"><i class="fa-solid fa-paper-plane"></i></a>
-      <a href="#" style="--clr:#fff; margin-right: 20px;"><i class="fa-brands fa-google"></i></a> 
-    
+      <!-- <div class="parallax" style="min-height: 50px; color: #8c8c8c;"></div> -->
+
+      <!-- This is where the images with the borders are contained -->
+      <div class="AImageSections">
+        <div class="box">
+          <img src="favicon.ico" style="height: 95%; width: 95%;">
+        </div>
+        <div>
+          <h1 class="AImageInfo" style=" color: #ffffff;">Mushroom</h1>
+          <h2 style="padding-left: 20px; margin-top: 5px; margin-bottom: 5px; color: #ffffff;">This project was one of my favorites. I learnt the basics of emission, geometry nodes as well as touching up with particles and animation</h2>
+        </div>
+      </div>
+
+      <div class="AImageSections">
+        <div class="box">
+          <img src="../assets/images/water.jpeg" style="height: 95%; width: 95%;">
+        </div>
+        <div>
+          <h1 class="AImageInfo" style=" color: #ffffff;">Ocean</h1>
+          <h2 style="padding-left: 20px; margin-top: 5px; margin-bottom: 5px; color: #ffffff;">With this project I got a better understanding with how snapping works and how it can be applied to multiple options even during and animation.<br>
+          Other topics i leant was particle emmision, creating fog and the differences between many of blenders render options.</h2>
+        </div>
+      </div>
+
+      <div class="AImageSections">
+        <div class="box">
+          <img src="../assets/images/untitled.jpeg" style="height: 95%; width: 95%;">
+        </div>
+        <div>
+          <h1 class="AImageInfo" style=" color: #ffffff;">Building Complex</h1>
+          <h2 style="padding-left: 20px; margin-top: 5px; margin-bottom: 5px; color: #ffffff;">This is one of my first project besides the common blender guru doughnut. I learnt a valuable lesson about what happens if you have too many vertices. XD</h2>
+        </div>
+      </div>
+
+      <div class="AImageSections">
+        <div class="box">
+          <img src="../assets/images/sunset.jpeg" style="height: 95%; width: 95%;">
+        </div>
+        <div>
+          <h1 class="AImageInfo" style=" color: #ffffff;">Sunset</h1>
+          <h2 style="padding-left: 20px; margin-top: 5px; margin-bottom: 5px; color: #ffffff;">All this project is, is me attempting a low poly object. There was useful information however. I learnt more about noise textures and how to animate it's value. </h2>
+        </div>
+      </div>
+
+      <div class="AImageSections">
+        <div class="box">
+          <img src="../assets/images/portal.jpg" style="height: 95%; width: 95%;">
+        </div>
+        <div>
+          <h1 class="AImageInfo" style=" color: #ffffff;">Portal</h1>
+          <h2 style="padding-left: 20px; margin-top: 5px; margin-bottom: 5px; color: #ffffff;">This project is one of my favorites yet there wasnt much to learn from here.</h2>
+        </div>
+      </div>
+
+      <div class="AImageSections">
+        <div class="box">
+          <img src="../assets/images/oceanGif.gif" style="height: 95%; width: 95%;">
+        </div>
+        <div>
+          <h1 class="AImageInfo" style=" color: #ffffff;">Ocean</h1>
+          <h2 style="padding-left: 20px; margin-top: 5px; margin-bottom: 5px; color: #ffffff;">This is the same ocean project I was just seeing how gifs on the webpage works.</h2>
+        </div>
+      </div>
+
+      <!-- This is for the panel that shows the images -->
+      <marquee class="marq" bgcolor="#555" direction="right" loop="-1" white-space="nowrap">
+        <div style="margin: center; width: 260px; height: 200px;">
+          <div style="margin: auto; width: fit-content; height: fit-content; background-color: beige;">
+            <span>
+              <img src="favicon.ico" style="margin: 6px; height: 190px;">
+              <img src="../assets/images/water.jpeg" style="margin: 6px; height: 190px;">
+              <img src="../assets/images/untitled.jpeg" style="margin: 6px; height: 190px;">
+              <img src="../assets/images/sunset.jpeg" style="margin: 6px; height: 190px;">
+              <img src="../assets/images/portal.jpg" style="margin: 6px; height: 190px;">  
+              <img src="../assets/images/oceanGif.gif" style="margin: 6px; height: 190px;"> 
+            </span>          
+          </div>
+        </div>
+      </marquee>
+    </div>
+    <div class="footer">
+      <div class="spacer"></div>
+      <a href="https://www.linkedin.com/in/mack-rubidge-a09948229/" style="--clr:#fff;"><i class="fa-brands fa-linkedin" style="color: black;"></i></a>
+      <a href="https://github.com/skitsadventures" style="--clr:#fff;"><i class="fa-brands fa-github" style="color: black;"></i></a>
+      <a href="mailto:mackrubidge@gmail.com" style="--clr:#fff;"><i class="fa-solid fa-paper-plane" style="color: black;"></i></a>
+      <a href="#" style="--clr:#fff;"><i class="fa-brands fa-google" style="color: black;"></i></a> 
+    </div>
   </div>
 </body>
+</html>

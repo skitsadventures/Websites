@@ -1,25 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+  <script src="index.js" defer></script>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <!-- This link is for the Footer icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
-        body, h1, p {
-            margin: 0;
-            padding: 0;
-        }
-
-        .spacer {
+        .spacer {   /* This is to put the linkedin and github logos on the right */
             flex: 1;
-        }
-
-        .HomeBG {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: stretch;
-            width: 100%;
-            box-sizing: border-box;
         }
 
         .ImageColumn,
@@ -34,19 +22,6 @@
             height: auto;
         }
 
-        .footer {
-            display: flex;
-            align-items: center;
-            background-color: #333;
-            padding: 10px 20px;
-            color: white;
-        }
-
-        .footer a {
-            color: white;
-            margin-right: 20px;
-        }
-
         @media (max-width: 768px) {
             .ImageColumn,
             .HColumn {
@@ -56,29 +31,36 @@
     </style>
 </head>
 <body>
-    <div class="HomeBG">
-        <div class="ImageColumn">
-            <!-- <img class="HomeImage" src="../assets/images/MEAGAIN.jpeg" alt="Image of Mack Rubidge"> -->
-        </div>
-        <div class="HColumn">
-            <h1 style="color: rgb(255, 255, 255); margin-bottom: 10px;">Hi, I'm Mack Rubidge.</h1>
-            <p style="color: rgb(255, 255, 255);">
+    <div id="container">
+        <div class="content">
+          <div class="HomeBG">
+            <div class="ImageColumn">
+              <!-- <img class="HomeImage" src="../assets/images/MEAGAIN.jpeg" alt="Image of Mack Rubidge"> -->
+            </div>
+            <div class="HColumn">
+              <h1 style="color: rgb(255, 255, 255); margin-bottom: 10px; font-size: 40px;">Hi, I'm Mack Rubidge.</h1>
+              <p style="color: rgb(255, 255, 255); padding-right: 20%; font-size: 20px;">
                 This is my website where I plan on posting my work and hopefully learn more in doing so.
-                <br>For more information about me, please visit the Resume page. To see my work, you can go to the About page.
-            </p>
+                <br>For more information about me, please visit the Resume page. <br>To see my work, you can go to the About page.
+              </p>
+            </div>
+          </div>
+          <div class="HomeCleanBackground">
+            <button (click)="openDialog()">Open Dialog</button>
+
+            <div *ngIf="dialogVisible" class="custom-dialog">
+              <p>This is a dialog box.</p>
+              <button (click)="closeDialog()">Close</button>
+            </div>
+          </div>
         </div>
-    </div>
-
-    <div class="HomeCleanBackground" style="min-height: 50px; padding: 20px;">
-        <p>Empty For Now</p>
-    </div>
-
-    <div class="footer">
-        <div class="spacer"></div>
-        <a href="#" style="--clr:#fff;"><i class="fa-brands fa-linkedin" style="color: black;"></i></a>
-        <a href="https://github.com/skitsadventures" style="--clr:#fff;"><i class="fa-brands fa-linkedin" style="color: black;"></i></a>
-        <a href="#" style="--clr:#fff;"><i class="fa-solid fa-paper-plane" style="color: black;"></i></a>
-        <a href="#" style="--clr:#fff;"><i class="fa-brands fa-google" style="color: black;"></i></a> 
-    </div>
-</body>
-</html>
+        <div class="footer">
+          <div class="spacer"></div>
+          <a href="https://www.linkedin.com/in/mack-rubidge-a09948229/" style="--clr:#fff;"><i class="fa-brands fa-linkedin" style="color: black;"></i></a>
+          <a href="https://github.com/skitsadventures" style="--clr:#fff;"><i class="fa-brands fa-github" style="color: black;"></i></a>
+          <a href="mailto:mackrubidge@gmail.com" style="--clr:#fff;"><i class="fa-solid fa-paper-plane" style="color: black;"></i></a>
+          <a href="#" style="--clr:#fff;"><i class="fa-brands fa-google" style="color: black;"></i></a> 
+        </div>
+      </div>
+    </body>
+    </html>

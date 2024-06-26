@@ -8,6 +8,7 @@ import { ButtonModule } from 'primeng/button';
 import { AboutComponent } from './components/about/about.component';
 import { ResumeComponent } from './components/resume/resume.component';
 import { HomeComponent } from './components/home/home.component';
+import { DialogExampleComponent } from './dialog-example/dialog-example.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { HomeComponent } from './components/home/home.component';
     HomeComponent,
     AboutComponent,
     ResumeComponent,
+    DialogExampleComponent,
   ],
   imports: [
     BrowserModule,
