@@ -10,6 +10,67 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   
   <style>
+    /* /////////////////////////////////   About INFO   ///////////////////////////////////////////////// */
+
+.AImageSections {
+  background: linear-gradient(to right, #011816, #02a59d);
+  display: flex;
+}
+
+.About {
+  background: linear-gradient(to right, #011816, #02a59d);
+}
+
+.AImageInfo {
+  margin-left: 6%;
+}
+
+.box img {
+  max-width: 100%;
+  max-height: 100%;
+  z-index: 1;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin-left: 6%;
+  margin-top: 8px;
+  position: relative;
+  width: 400px;
+  height: 340px;
+  background: repeating-conic-gradient(from var(--a), #92def2 0%, #92def2 5%, transparent 5%, transparent 20%, #92def2 50%);
+  animation: animate 4s linear infinite;
+}
+
+@property --a {
+  syntax: '<angle>';
+  inherits: false;
+  initial-value: 0deg;
+}
+
+@keyframes animate {
+  0% {
+      --a: 0deg;
+  }
+  100% {
+      --a: 360deg;
+  }
+}
+
+.box::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: repeating-conic-gradient(from var(--a), #92def2 0%, #92def2 5%, transparent 5%, transparent 20%, #92def2 50%);
+  animation: animate 4s linear infinite;
+  animation-delay: -1s;
+  z-index: 0;
+}
+    
     /* This style is to let the footer links stay to the right */
     .spacer {
       flex: 1;
