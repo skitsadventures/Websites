@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { CommonModule } from '@angular/common';
+import { ButtonModule } from 'primeng/button';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { CommonModule } from '@angular/common';
-import { ButtonModule } from 'primeng/button';
+import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
 import { ResumeComponent } from './components/resume/resume.component';
-import { HomeComponent } from './components/home/home.component';
 import { DialogExampleComponent } from './dialog-example/dialog-example.component';
 
 @NgModule({
@@ -22,9 +22,12 @@ import { DialogExampleComponent } from './dialog-example/dialog-example.componen
     BrowserModule,
     AppRoutingModule,
     CommonModule,
-    ButtonModule
+    ButtonModule,
+    // Add other PrimeNG modules as needed
   ],
-  providers: [],
+  providers: [
+    // Add services if needed
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
